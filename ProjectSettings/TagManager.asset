@@ -8,6 +8,7 @@ TagManager:
   - 1
   - Background
   - Buttonmenu
+  - Item
   layers:
   - Default
   - TransparentFX
