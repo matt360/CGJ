@@ -123,7 +123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &61684832
 RectTransform:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25.509666}
+  m_AnchoredPosition: {x: 0, y: -61.5}
   m_SizeDelta: {x: 200.4, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408996915
@@ -1029,7 +1029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 31.470009}
+  m_AnchoredPosition: {x: 0, y: 13.5}
   m_SizeDelta: {x: 200.4, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502215382
@@ -1427,13 +1427,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Lili Liu - 3D ART/UV MAPPING
-
-    Jordan Joshua Dunn - 3D ART/2D ART
-
-    Chen Shen - CODE
-
-    Matthew Wallace - UI CODE'
+  m_text: "3D ART/UV MAPPING\nLili Liu - \nJordan Joshua Dunn - 3D ART/2D ART\nChen
+    Shen - CODE\nMatthew Wallace - UI CODE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -1501,19 +1496,19 @@ MonoBehaviour:
   m_margin: {x: -76.830956, y: 0, z: -85.10502, w: -107.56331}
   m_textInfo:
     textComponent: {fileID: 862827449}
-    characterCount: 106
+    characterCount: 107
     spriteCount: 0
-    spaceCount: 21
+    spaceCount: 22
     wordCount: 24
     linkCount: 0
-    lineCount: 4
+    lineCount: 5
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1985,7 +1980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -61.4}
+  m_AnchoredPosition: {x: 0, y: -61.5}
   m_SizeDelta: {x: 200.4, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1129578270
@@ -2197,7 +2192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: -24.5}
+  m_AnchoredPosition: {x: -0.000030517578, y: -36.6}
   m_SizeDelta: {x: 200.4, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1456492368
@@ -2341,7 +2336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3.3062453}
+  m_AnchoredPosition: {x: 0, y: -11.9}
   m_SizeDelta: {x: 200.4, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1506092369
@@ -2581,11 +2576,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2619,7 +2614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1797781045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2983,7 +2978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -52.8}
+  m_AnchoredPosition: {x: 0, y: -61.5}
   m_SizeDelta: {x: 200.4, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994274264
@@ -3201,11 +3196,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
