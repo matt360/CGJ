@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drag : MonoBehaviour {
+public class Drag : MonoBehaviour
+{
     private Transform dragGameObject;
     private LayerMask canDrag;
     public LayerMask canDrag2;
@@ -16,13 +17,14 @@ public class Drag : MonoBehaviour {
         canDrag = 1 << LayerMask.NameToLayer("Cube");
     }
 
-#if UNITY_EDITOR
-    //for unity editor
+
     private void Update()
     {
+#if UNITY_EDITOR
+        //for unity editor
         if (Input.GetMouseButtonDown(0))
         {
-            if (CheckGameObject())
+            if (CheckGameObjectMouse())
             {
                 offset = dragGameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetScreenPoint.z));
             }
@@ -41,15 +43,59 @@ public class Drag : MonoBehaviour {
             isClickCube = false;
         }
 
+#else
+        //for android devices
+        if (Input.touchCount > 0)
+        {
+            switch (Input.GetTouch(0).phase)
+            {
+                case TouchPhase.Began:
+                    if (CheckGameObjectTouch())
+                    {
+                        offset = dragGameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, targetScreenPoint.z));
+                    }
+                    break;
+                case TouchPhase.Canceled: // If the interaction ends for any reason, we have to call the listeners
+                case TouchPhase.Ended:
+                    isClickCube = false;
+                    break;
+            }
+            
+            if (isClickCube)
+            {
+                Vector3 curScreenPoint = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, targetScreenPoint.z);
+
+                Vector3 curWorldPoint = Camera.main.ScreenToWorldPoint(curScreenPoint);
+                dragGameObject.position = curWorldPoint + offset;
+            }
+        }
+
+#endif
     }
-    
-    private bool CheckGameObject()
+
+    private bool CheckGameObjectTouch()
+    {
+        if (Input.touchCount > 0)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit hitInfo;
+            if (Physics.Raycast(ray, out hitInfo))
+            {
+                isClickCube = true;
+                dragGameObject = hitInfo.collider.gameObject.transform;
+                targetScreenPoint = Camera.main.WorldToScreenPoint(dragGameObject.position);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private bool CheckGameObjectMouse()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo))
         {
-            Debug.Log(11);
             isClickCube = true;
             dragGameObject = hitInfo.collider.gameObject.transform;
             targetScreenPoint = Camera.main.WorldToScreenPoint(dragGameObject.position);
@@ -57,8 +103,6 @@ public class Drag : MonoBehaviour {
         }
         return false;
     }
-#else
-    //for android devices
 
-#endif
+
 }
