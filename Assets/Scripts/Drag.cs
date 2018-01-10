@@ -94,6 +94,7 @@ public class Drag : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
+        Debug.Log(1);
         if (Physics.Raycast(ray, out hitInfo))
         {
             isClickCube = true;
