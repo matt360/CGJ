@@ -149,7 +149,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.4705935, y: 0.5630121, z: 1}
-  m_Center: {x: 0.017456532, y: 0.0012879372, z: 0}
+  m_Center: {x: 0.017456532, y: 0.27, z: 0}
 --- !u!1 &577572525
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d067fb777c9fa4fbed5ec1c5bc3691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonmenu: {fileID: 1332646479}
   canDrag2:
     serializedVersion: 2
     m_Bits: 1
@@ -565,7 +566,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.4705935, y: 0.5630121, z: 1}
-  m_Center: {x: 0.017456532, y: 0.0012879372, z: 0}
+  m_Center: {x: 0.017456532, y: 0.27, z: 0}
 --- !u!1 &1291798822
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +671,7 @@ GameObject:
   - component: {fileID: 1332646480}
   m_Layer: 0
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: Buttonmenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
