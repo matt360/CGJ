@@ -9,5 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: a85b9147110489149aaaf926e5ba084f
   - enabled: 1
+<<<<<<< HEAD
+=======
+    path: Assets/Scenes/Experiments Menu.unity
+    guid: ec0de58829d8c25459fd8d389dfb46fe
+  - enabled: 1
+>>>>>>> b7469ba9287c22e7364e35e1b3b0dbe637b5d68a
     path: Assets/Scenes/Laboratory.unity
     guid: deae2c5084ecf474297ca629ea9a3aab
