@@ -13,4 +13,14 @@ public class MainMenuButtons : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void PlayGame()
+    {
+        Application.LoadLevel(1);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
