@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour {
 
@@ -16,7 +17,7 @@ public class MainMenuButtons : MonoBehaviour {
 
     public void PlayGame()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
