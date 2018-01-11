@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragOut : MonoBehaviour
 {
 
-    public GameObject Beaker,CuSO4,Spetular;
+    public GameObject Beaker,CuSO4,Spetular,ConeBeaker,SphereBeaker,Funnel,Seperator,Sqeezy;
     private Vector3 offset;
     private bool isClick = false;
     private Vector3 targetScreenPoint;
