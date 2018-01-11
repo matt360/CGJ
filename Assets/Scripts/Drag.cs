@@ -36,7 +36,8 @@ public class Drag : MonoBehaviour
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetScreenPoint.z);
 
             Vector3 curWorldPoint = Camera.main.ScreenToWorldPoint(curScreenPoint);
-            dragGameObject.position = curWorldPoint + offset;
+            if (dragGameObject)
+                dragGameObject.position = curWorldPoint + offset;
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -69,7 +70,8 @@ public class Drag : MonoBehaviour
                 Vector3 curScreenPoint = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, targetScreenPoint.z);
 
                 Vector3 curWorldPoint = Camera.main.ScreenToWorldPoint(curScreenPoint);
-                dragGameObject.position = curWorldPoint + offset;
+                if(dragGameObject)
+                    dragGameObject.position = curWorldPoint + offset;
             }
         }
 
