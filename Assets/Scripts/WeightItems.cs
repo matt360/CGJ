@@ -33,17 +33,9 @@ public class WeightItems : MonoBehaviour
                 collision.gameObject.transform.position = Erl_Flask.transform.position;
                 break;
 
-            case "Filter":
-                collision.gameObject.transform.position = Filter.transform.position;
-                break;
-
             case "Measuring_Cylinder":
                 collision.gameObject.transform.position = Measuring_Cylinder.transform.position;
-                break;
-
-            case "Spatula":
-                collision.gameObject.transform.position = Spatula.transform.position;
-                break;
+                break; 
 
             case "Squeeze_Bottle":
                 collision.gameObject.transform.position = Squeeze_Bottle.transform.position;
@@ -51,14 +43,6 @@ public class WeightItems : MonoBehaviour
 
             case "Flask_Small":
                 collision.gameObject.transform.position = Flask_Small.transform.position;
-                break;
-
-            case "Separate_Layers":
-                collision.gameObject.transform.position = Separate_Layers.transform.position;
-                break;
-
-            case "Ring_Stand":
-                collision.gameObject.transform.position = Ring_Stand.transform.position;
                 break;
 
             case "Round_Bottomed_Flask":
