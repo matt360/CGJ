@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: 862827450}
   - component: {fileID: 862827449}
   m_Layer: 5
-  m_Name: TextMeshPro ABOUT TEXT
+  m_Name: TextMeshPro CREDITS TEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3093,7 +3093,7 @@ GameObject:
   - component: {fileID: 2061659135}
   - component: {fileID: 2061659134}
   m_Layer: 5
-  m_Name: TextMeshPro PLAY BUTTON
+  m_Name: TextMeshPro ABOUT TEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
