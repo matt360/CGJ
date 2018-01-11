@@ -7,24 +7,33 @@ public class PauseMenu : MonoBehaviour {
 
     // static accessible to other scripts
     public static bool gameIsPaused = false;
+    public static uint step = 0;
 
+    public List<GameObject> step_list;
     public GameObject pauseMenuUI;
-#if UNITY_EDITOR
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.Escape))
+
+    void Update()
+    {
+        for (int i = 0; i < 10; ++i)
         {
-            if (gameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            if (i == step) step_list[i].SetActive(true);
+            else step_list[i].SetActive(false);
         }
-	}
-#endif
+
+    }
+
+    public void IncreaseStep()
+    {
+        if (step < 9) step++;
+        else step = 0;
+    }
+
+    public void DecreaseStep()
+    {
+        if (step > 0) step--;
+        else step = 9;
+    } 
+
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
