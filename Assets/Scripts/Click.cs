@@ -5,10 +5,11 @@ using UnityEngine;
 public class Click : MonoBehaviour
 {
     public GameObject buttonmenu;
-
-    private Transform dragGameObject;
-    private LayerMask canDrag;
+    public Transform equip;
+    public Transform eleme;
     public LayerMask canDrag2;
+
+    private LayerMask canDrag;
     private Vector3 offset;
     private bool isClickCube;
     private Vector3 targetScreenPoint;
@@ -16,7 +17,7 @@ public class Click : MonoBehaviour
     private bool isShow = false;
     private Vector3 startMarker;
     private Vector3 endMarker;
-    private float speed = 8.0F;
+    private float speed = 10F;
     private float startTime;
     private float journeyLength;
 
@@ -63,7 +64,7 @@ public class Click : MonoBehaviour
 #endif
         if (isClickCube && journeyLength != 0)
         {
-            Debug.Log(1);
+            //Debug.Log(1);
             float distCovered = (Time.time - startTime) * speed;
             float fracJourney = distCovered / journeyLength;
             GameObject.FindGameObjectWithTag("1").transform.position = Vector3.Lerp(startMarker, endMarker, fracJourney);
@@ -92,7 +93,17 @@ public class Click : MonoBehaviour
                     endMarker = new Vector3(0, -6, 0);
                     buttonmenu.SetActive(false);
                     isClickCube = true;
-                    dragGameObject = hitInfo.collider.gameObject.transform;
+                    switch (this.gameObject.name)
+                    {
+                        case "Equipment":
+                            equip.gameObject.SetActive(true);
+                            eleme.gameObject.SetActive(false);
+                            break;
+                        case "Element":
+                            equip.gameObject.SetActive(false);
+                            eleme.gameObject.SetActive(true);
+                            break;
+                    }
                     return true;
                 }
                 else if (hitInfo.collider.gameObject.tag == "Background" || hitInfo.collider.gameObject.tag == "ItemIcon")
@@ -101,7 +112,6 @@ public class Click : MonoBehaviour
                     endMarker = new Vector3(0, 0, 0);
                     buttonmenu.SetActive(true);
                     isClickCube = true;
-                    dragGameObject = hitInfo.collider.gameObject.transform;
                     return true;
                 }
                 
@@ -123,7 +133,19 @@ public class Click : MonoBehaviour
                 endMarker = new Vector3(0, -6, 0);
                 buttonmenu.SetActive(false);
                 isClickCube = true;
-                dragGameObject = hitInfo.collider.gameObject.transform;
+                switch (this.name)
+                {
+                    case "EquipmentBtn":
+                        Debug.Log(1);
+                        equip.gameObject.SetActive(true);
+                        eleme.gameObject.SetActive(false);
+                        break;
+                    case "ElementBtn":
+                        Debug.Log(2);
+                        equip.gameObject.SetActive(false);
+                        eleme.gameObject.SetActive(true);
+                        break;
+                }
                 //Debug.Log(hitInfo.collider.gameObject.name);
                 return true;
             }
@@ -134,7 +156,6 @@ public class Click : MonoBehaviour
                 endMarker = new Vector3(0, 0, 0);
                 buttonmenu.SetActive(true);
                 isClickCube = true;
-                dragGameObject = hitInfo.collider.gameObject.transform;
                 
                 return true;
             }
