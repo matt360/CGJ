@@ -108,11 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &69639672 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4405216561369754, guid: e2c03bdbfd04c1b498749e750b86fb26,
-    type: 2}
-  m_PrefabInternal: {fileID: 253125249}
 --- !u!1 &179403447
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,20 +502,6 @@ Prefab:
     - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114397708713726608, guid: 8384c5d77646db34a811f76df6ce3151,
-        type: 2}
-      propertyPath: itemWeightingPlace
-      value: 
-      objectReference: {fileID: 69639672}
-    - target: {fileID: 114397708713726608, guid: 8384c5d77646db34a811f76df6ce3151,
-        type: 2}
-      propertyPath: weightingPlace
-      value: 
-      objectReference: {fileID: 1534387488}
-    - target: {fileID: 4330281543701068, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
@@ -1095,11 +1076,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2853756
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1534387488 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4330281543701068, guid: 8384c5d77646db34a811f76df6ce3151,
-    type: 2}
-  m_PrefabInternal: {fileID: 776455499}
 --- !u!1 &1605805700
 GameObject:
   m_ObjectHideFlags: 0
