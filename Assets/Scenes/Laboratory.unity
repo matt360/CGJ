@@ -559,6 +559,15 @@ Prefab:
       propertyPath: itemWeightingPlace
       value: 
       objectReference: {fileID: 69639672}
+    - target: {fileID: 114397708713726608, guid: 8384c5d77646db34a811f76df6ce3151,
+        type: 2}
+      propertyPath: weightingPlace
+      value: 
+      objectReference: {fileID: 1534387488}
+    - target: {fileID: 4330281543701068, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.76
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
   m_IsPrefabParent: 0
@@ -885,6 +894,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1116,6 +1139,11 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2853756
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1534387488 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4330281543701068, guid: 8384c5d77646db34a811f76df6ce3151,
+    type: 2}
+  m_PrefabInternal: {fileID: 776455499}
 --- !u!1 &1605805700
 GameObject:
   m_ObjectHideFlags: 0
