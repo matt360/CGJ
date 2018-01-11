@@ -26,7 +26,7 @@ public class Drag : MonoBehaviour
         {
             if (CheckGameObjectMouse())
             {
-                Debug.Log(123);
+                //Debug.Log(123);
                 offset = dragGameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetScreenPoint.z));
             }
         }
@@ -41,6 +41,7 @@ public class Drag : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
+            dragGameObject = null;
             isClickCube = false;
         }
 
@@ -103,7 +104,7 @@ public class Drag : MonoBehaviour
             if (hitInfo.collider.gameObject.tag == "Item")
             {
                 isClickCube = true;
-                dragGameObject = this.transform;
+                dragGameObject = hitInfo.collider.GetComponent<Transform>();
                 targetScreenPoint = Camera.main.WorldToScreenPoint(dragGameObject.position);
                 return true;
             }

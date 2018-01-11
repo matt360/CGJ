@@ -63,6 +63,7 @@ public class Click : MonoBehaviour
 #endif
         if (isClickCube && journeyLength != 0)
         {
+            Debug.Log(1);
             float distCovered = (Time.time - startTime) * speed;
             float fracJourney = distCovered / journeyLength;
             GameObject.FindGameObjectWithTag("1").transform.position = Vector3.Lerp(startMarker, endMarker, fracJourney);
@@ -90,18 +91,20 @@ public class Click : MonoBehaviour
                     isShow = true;
                     endMarker = new Vector3(0, -6, 0);
                     buttonmenu.SetActive(false);
+                    isClickCube = true;
+                    dragGameObject = hitInfo.collider.gameObject.transform;
+                    return true;
                 }
-                if (hitInfo.collider.gameObject.tag == "Background")
+                else if (hitInfo.collider.gameObject.tag == "Background" || hitInfo.collider.gameObject.tag == "ItemIcon")
                 {
                     isShow = false;
                     endMarker = new Vector3(0, 0, 0);
                     buttonmenu.SetActive(true);
+                    isClickCube = true;
+                    dragGameObject = hitInfo.collider.gameObject.transform;
+                    return true;
                 }
-
-                isClickCube = true;
-                dragGameObject = hitInfo.collider.gameObject.transform;
-
-                return true;
+                
             }
         }
         return false;
@@ -115,25 +118,28 @@ public class Click : MonoBehaviour
         {
             if (hitInfo.collider.gameObject.tag == "UI")
             {
+                //Debug.Log(1);
                 isShow = true;
                 endMarker = new Vector3(0, -6, 0);
                 buttonmenu.SetActive(false);
+                isClickCube = true;
+                dragGameObject = hitInfo.collider.gameObject.transform;
+                //Debug.Log(hitInfo.collider.gameObject.name);
+                return true;
             }
-            if (hitInfo.collider.gameObject.tag == "Background")
+            else if (hitInfo.collider.gameObject.tag == "ItemIcon" || hitInfo.collider.gameObject.tag == "Background" || hitInfo.collider.gameObject.tag == "Item")
             {
+                //Debug.Log(2);
                 isShow = false;
                 endMarker = new Vector3(0, 0, 0);
                 buttonmenu.SetActive(true);
+                isClickCube = true;
+                dragGameObject = hitInfo.collider.gameObject.transform;
+                
+                return true;
             }
-
-            isClickCube = true;
-            dragGameObject = hitInfo.collider.gameObject.transform;
-            //Debug.Log(hitInfo.collider.gameObject.name);
-            return true;
-
+            Debug.Log(hitInfo.collider.gameObject.name);
         }
         return false;
     }
-
-
 }
