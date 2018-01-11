@@ -131,7 +131,7 @@ public class DragOut : MonoBehaviour
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
                         break;
-                    case "Spetular":
+                    case "Spatula":
                         dragOutGameObject = Instantiate(Spetular);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
