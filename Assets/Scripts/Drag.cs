@@ -86,7 +86,9 @@ public class Drag : MonoBehaviour
             RaycastHit hitInfo;
             if (Physics.Raycast(ray, out hitInfo))
             {
-                if (hitInfo.collider.gameObject.tag == "Item" || hitInfo.collider.gameObject.tag == "Element")
+                if (hitInfo.collider.gameObject.tag == "Beaker"
+                    || hitInfo.collider.gameObject.tag == "Bottle"
+                    || hitInfo.collider.gameObject.tag == "Erl_Flask")
                 {
                     isClickCube = true;
                     dragGameObject = hitInfo.collider.GetComponent<Transform>();
@@ -104,7 +106,9 @@ public class Drag : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo))
         {
-            if (hitInfo.collider.gameObject.tag == "Item" || hitInfo.collider.gameObject.tag == "Element")
+            if (hitInfo.collider.gameObject.tag == "Beaker"
+                || hitInfo.collider.gameObject.tag == "Bottle"
+                || hitInfo.collider.gameObject.tag == "Erl_Flask")
             {
                 isClickCube = true;
                 dragGameObject = hitInfo.collider.GetComponent<Transform>();
