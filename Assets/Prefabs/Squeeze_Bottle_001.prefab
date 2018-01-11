@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65545769627455792}
   m_Layer: 0
   m_Name: Squeeze_Bottle_001
-  m_TagString: Item
+  m_TagString: Squeeze_Bottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

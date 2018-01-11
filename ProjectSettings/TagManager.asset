@@ -13,6 +13,18 @@ TagManager:
   - WeightPlace
   - Element
   - ElementIcon
+  - Beaker
+  - Bottle
+  - Erl_Flask
+  - Filter
+  - Measuring_Cylinder
+  - Scale
+  - Spatula
+  - Squeeze_Bottle
+  - Flask_Small
+  - Separate_Layers
+  - Ring_Stand
+  - Round_Bottomed_Flask
   layers:
   - Default
   - TransparentFX
