@@ -3159,7 +3159,7 @@ SpriteRenderer:
   m_SortingLayerID: 1856859963
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ea9ac8c939c7d9848a07af9a656689fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3473afe9b4d372d478b6a8cc69586572, type: 3}
   m_Color: {r: 0.41176468, g: 0.32093424, b: 0.32093424, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4397,7 +4397,7 @@ GameObject:
   - component: {fileID: 1229755256}
   m_Layer: 0
   m_Name: Spetular
-  m_TagString: Item
+  m_TagString: Spatula
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4426,8 +4426,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4359593, y: 2.5522447, z: 0.051647056}
-  m_Center: {x: 0, y: -0.0064194202, z: 0}
+  m_Size: {x: 1.0659237, y: 2.7578218, z: 0.051647056}
+  m_Center: {x: 10.99834, y: 1.2064823, z: 0}
 --- !u!1 &1244223086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,7 +5085,7 @@ SpriteRenderer:
   m_SortingLayerID: 1856859963
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea9ac8c939c7d9848a07af9a656689fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3473afe9b4d372d478b6a8cc69586572, type: 3}
   m_Color: {r: 0.9705882, g: 0.61375433, b: 0.61375433, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5561,7 +5561,7 @@ SpriteRenderer:
   m_SortingLayerID: 1856859963
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea9ac8c939c7d9848a07af9a656689fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3473afe9b4d372d478b6a8cc69586572, type: 3}
   m_Color: {r: 1, g: 0.78676474, b: 0.78676474, a: 1}
   m_FlipX: 0
   m_FlipY: 0
