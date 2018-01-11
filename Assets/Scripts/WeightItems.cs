@@ -18,8 +18,8 @@ public class WeightItems : MonoBehaviour {
         //{
         //    collision.transform.position = weightingPlace.transform.position;
         //}
-        //if (collision.gameObject.tag == "Item")
-        collision.gameObject.transform.position = weightingPlace.transform.position;
+        if (collision.gameObject.tag == "Item")
+            collision.gameObject.transform.position = weightingPlace.transform.position;
 
 
         Debug.Log("Collision happened");

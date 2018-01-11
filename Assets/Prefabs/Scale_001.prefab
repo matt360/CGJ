@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4330281543701068}
   m_Layer: 0
-  m_Name: WeightingPlace
-  m_TagString: Untagged
+  m_Name: WeightPlace
+  m_TagString: WeightPlace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
