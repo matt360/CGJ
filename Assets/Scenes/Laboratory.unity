@@ -641,7 +641,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1293411798}
-  - component: {fileID: 1293411799}
   m_Layer: 0
   m_Name: Element
   m_TagString: Untagged
@@ -663,18 +662,6 @@ Transform:
   m_Father: {fileID: 803062504}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1293411799
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1293411797}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 17.757193, y: 5.561119, z: 1}
-  m_Center: {x: 0.000012397766, y: 8.081114, z: 0}
 --- !u!1 &1332646479
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,9 +772,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1369263338}
   - component: {fileID: 1369263339}
+  - component: {fileID: 1369263340}
   m_Layer: 0
-  m_Name: New Sprite
-  m_TagString: Untagged
+  m_Name: Items
+  m_TagString: ItemIcon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -847,6 +835,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1369263340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369263337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1605805700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1083,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2016293456}
-  - component: {fileID: 2016293457}
   m_Layer: 0
   m_Name: Equipment
   m_TagString: Untagged
@@ -1106,15 +1105,3 @@ Transform:
   m_Father: {fileID: 803062504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2016293457
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2016293455}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 17.65804, y: 5.7098503, z: 1}
-  m_Center: {x: 0.000012874603, y: 8.056326, z: 0}

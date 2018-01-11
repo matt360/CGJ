@@ -9,6 +9,7 @@ TagManager:
   - Background
   - Buttonmenu
   - Item
+  - ItemIcon
   layers:
   - Default
   - TransparentFX
