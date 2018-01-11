@@ -322,6 +322,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.4705935, y: 0.5841737, z: 1}
   m_Center: {x: 0.017456532, y: -0.22731328, z: 0}
+--- !u!1001 &338514150
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114397708713726608, guid: 8384c5d77646db34a811f76df6ce3151,
+        type: 2}
+      propertyPath: Squeeze_Bottle
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &419387235
 Prefab:
   m_ObjectHideFlags: 0
@@ -699,48 +746,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b59634c08c282e440a4d3f6ca731a1b6, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &776455499
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4580885338285808, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8384c5d77646db34a811f76df6ce3151, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &803062503
 GameObject:
