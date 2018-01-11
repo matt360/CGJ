@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour {
     public static bool gameIsPaused = false;
 
     public GameObject pauseMenuUI;
-	
+#if UNITY_EDITOR
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape))
@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour {
             }
         }
 	}
-
+#endif
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
