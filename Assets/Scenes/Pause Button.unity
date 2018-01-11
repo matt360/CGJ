@@ -384,7 +384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &138791465
 RectTransform:
   m_ObjectHideFlags: 0
@@ -423,9 +423,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 3\n\n1. Measure 10ml methanol into measuring cylinder\vPerhaps user
-    could press and hold squeeze bottle \u2013 measuring cylinder fills. Player has
-    to release button at the correct time(?)\r\n\n"
+  m_text: 'STEP 3
+
+
+    Measure 10ml methanol into measuring cylinder
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -493,14 +497,14 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 138791466}
-    characterCount: 188
+    characterCount: 55
     spriteCount: 0
-    spaceCount: 31
-    wordCount: 29
+    spaceCount: 10
+    wordCount: 8
     linkCount: 0
-    lineCount: 7
+    lineCount: 4
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -796,6 +800,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298375276}
+--- !u!1 &471382616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 471382617}
+  - component: {fileID: 471382619}
+  - component: {fileID: 471382618}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &471382617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471382616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.8424394, y: 1.028517, z: 1.028517}
+  m_Children: []
+  m_Father: {fileID: 907312419}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: -109}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &471382618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471382616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 93c9bb3c2959fdb499234b1d07712abe, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &471382619
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471382616}
 --- !u!1 &478855707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,11 +1375,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1343,7 +1415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &663771700
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1497,7 +1569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &668322237
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1536,9 +1608,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 5\n\n1. Use spatula to add 0.20g of sodium borohydride (grey powder)
-    to flask\v(perhaps two \u201Cmovements\u201D of spatula \u2013 like adding two
-    spoons of sugar to a cup of tea)\r\n\n"
+  m_text: 'STEP 5
+
+
+    Use spatula to add 0.20g of sodium borohydride (grey powder) to flask.
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -1606,14 +1682,14 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 668322238}
-    characterCount: 170
+    characterCount: 80
     spriteCount: 0
-    spaceCount: 33
-    wordCount: 32
+    spaceCount: 16
+    wordCount: 15
     linkCount: 0
-    lineCount: 7
+    lineCount: 5
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1654,7 +1730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &695141452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1693,8 +1769,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 4\n\n1. Pour methanol into beaker\vperhaps user needs to tilt cylinder.
-    If it is done too quickly solvent spills(?) \r\n"
+  m_text: "STEP 4\n\nPour methanol into beaker\vperhaps user needs to tilt cylinder.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -1762,10 +1837,10 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 695141453}
-    characterCount: 120
+    characterCount: 71
     spriteCount: 0
-    spaceCount: 22
-    wordCount: 21
+    spaceCount: 12
+    wordCount: 12
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -1904,7 +1979,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 896841804}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1908110080, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
   m_Name: 
@@ -1948,7 +2023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &906997325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1988,9 +2063,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "STEP 6\n\n1. Add sodium borohydride to reaction flask\r\n2. When grey solid
-    is added the reaction will bubble. \v(perhaps user can tap vial to shake contents
-    of vial into the flask. If this is done too quickly the bubbles spill over the
-    side of the flask \n"
+    is added the reaction will bubble\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -2058,14 +2131,14 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 906997326}
-    characterCount: 251
+    characterCount: 106
     spriteCount: 0
-    spaceCount: 49
-    wordCount: 47
+    spaceCount: 20
+    wordCount: 19
     linkCount: 0
-    lineCount: 7
+    lineCount: 4
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2118,12 +2191,13 @@ RectTransform:
   m_LocalScale: {x: 0.25975105, y: 0.379157, z: 1}
   m_Children:
   - {fileID: 896841805}
+  - {fileID: 471382617}
   m_Father: {fileID: 1431510437}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00000095367}
+  m_AnchoredPosition: {x: 0, y: 20.2}
   m_SizeDelta: {x: 270.93, y: 148.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907312420
@@ -2145,8 +2219,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 1\n\n1. Add beaker to balance (scales).\r\n2. See weight on balance
-    e.g. 100g.\r\n3. press \u201CTARE\u201D button to zero balance\r\n"
+  m_text: "STEP 1\n\n1. Add beaker to balance (scales)\n2. See weight on balance e.g.
+    100g\n3. press \u201CTARE\u201D button to zero balance\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -2214,19 +2288,19 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 907312420}
-    characterCount: 121
+    characterCount: 118
     spriteCount: 0
-    spaceCount: 23
+    spaceCount: 24
     wordCount: 23
     linkCount: 0
-    lineCount: 5
+    lineCount: 6
     pageCount: 1
     materialCount: 2
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2485,7 +2559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1131640995
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2524,9 +2598,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 2\n\n1. Use spatula to add 0.75g of unknown carbonyl (orange powder)
-    to flask\v(perhaps two \u201Cmovements\u201D of spatula \u2013 like adding two
-    spoons of sugar to a cup of tea)\r\n\n"
+  m_text: 'STEP 2
+
+
+    Use spatula to add 0.75g of unknown carbonyl (orange powder) to flask
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -2594,14 +2672,14 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 1131640996}
-    characterCount: 170
+    characterCount: 79
     spriteCount: 0
-    spaceCount: 33
-    wordCount: 32
+    spaceCount: 16
+    wordCount: 15
     linkCount: 0
-    lineCount: 7
+    lineCount: 5
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2996,7 +3074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1323037212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3035,8 +3113,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 9\n\n1. Use tap to separate layers\vperhaps player could drag tap
-    to open position and then close before next layer starts to pass into beaker\r\n\n"
+  m_text: "STEP 9\n\n1. Use tap to separate layers\vperhaps\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -3104,12 +3181,12 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 1323037213}
-    characterCount: 147
+    characterCount: 47
     spriteCount: 0
-    spaceCount: 28
-    wordCount: 27
+    spaceCount: 10
+    wordCount: 9
     linkCount: 0
-    lineCount: 6
+    lineCount: 4
     pageCount: 1
     materialCount: 2
   m_havePropertiesChanged: 1
@@ -3287,7 +3364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1431510437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3336,7 +3413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1605549981
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3377,9 +3454,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "STEP 10\n\n1. Tap to add magnesium sulfate (MgSO4)\r\n2. Swirl beaker.
     Initially magnesium sulfate will \u201Cclump\u201D \u2013 add magnesium sulfate
-    until you see \u201Csnow-strom\u201D\n3. Player should try to add as little MgSO4
-    to the solution whilst still achieving the snow-storm effect (player could score
-    fewer points if they add too much MgSO4?)\r\n\n"
+    until you see \u201Csnow-strom\u201D\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -3447,12 +3522,12 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 1605549982}
-    characterCount: 328
+    characterCount: 160
     spriteCount: 0
-    spaceCount: 56
-    wordCount: 53
+    spaceCount: 27
+    wordCount: 24
     linkCount: 0
-    lineCount: 11
+    lineCount: 7
     pageCount: 1
     materialCount: 2
   m_havePropertiesChanged: 1
@@ -3633,7 +3708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1977576801
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3672,8 +3747,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 8\n\n1. Shake Sep Funnel to ensure mixing of layers\vPlayer has to
-    shake mobile phone or rapidly swipe left to right\r\n\n"
+  m_text: "STEP 8\n\n1. Shake Sep Funnel to ensure mixing of layers\v\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -3741,12 +3815,12 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 1977576802}
-    characterCount: 121
+    characterCount: 57
     spriteCount: 0
-    spaceCount: 24
-    wordCount: 23
+    spaceCount: 13
+    wordCount: 11
     linkCount: 0
-    lineCount: 6
+    lineCount: 4
     pageCount: 1
     materialCount: 2
   m_havePropertiesChanged: 1
@@ -4232,7 +4306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2089525279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4271,8 +4345,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "STEP 7\n\n1. Pour reaction mixture into separatory funnel \r\n2. Add dichloromethane
-    followed by water\vPerhaps user can tilt flask and then click buttons to add solvents\r\n\n"
+  m_text: "STEP 7\n\n1. Pour reaction mixture into separatory funnel\n2. Add dichloromethane
+    followed by water\v\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 808aa8f1ab804104aa7d0c337a6c1481, type: 2}
@@ -4340,12 +4414,12 @@ MonoBehaviour:
   m_margin: {x: 0.14227314, y: -1.0813599, z: -1.026596, w: 0.19917297}
   m_textInfo:
     textComponent: {fileID: 2089525280}
-    characterCount: 168
+    characterCount: 99
     spriteCount: 0
-    spaceCount: 29
-    wordCount: 27
+    spaceCount: 17
+    wordCount: 15
     linkCount: 0
-    lineCount: 7
+    lineCount: 5
     pageCount: 1
     materialCount: 2
   m_havePropertiesChanged: 1
