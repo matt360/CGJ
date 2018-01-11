@@ -11,6 +11,8 @@ TagManager:
   - Item
   - ItemIcon
   - WeightPlace
+  - Element
+  - ElementIcon
   layers:
   - Default
   - TransparentFX
