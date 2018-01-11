@@ -10,6 +10,7 @@ TagManager:
   - Buttonmenu
   - Item
   - ItemIcon
+  - WeightPlace
   layers:
   - Default
   - TransparentFX
