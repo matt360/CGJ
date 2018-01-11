@@ -5,8 +5,8 @@ using UnityEngine;
 public class Drag : MonoBehaviour
 {
     private Transform dragGameObject;
-    private LayerMask canDrag;
-    public LayerMask canDrag2;
+    //private LayerMask canDrag;
+    //public LayerMask canDrag2;
     private Vector3 offset;
     private bool isClickCube;
     private Vector3 targetScreenPoint;
@@ -14,7 +14,7 @@ public class Drag : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-        canDrag = 1 << LayerMask.NameToLayer("Cube");
+        //canDrag = 1 << LayerMask.NameToLayer("Cube");
     }
 
 

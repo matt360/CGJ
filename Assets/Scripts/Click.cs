@@ -128,7 +128,7 @@ public class Click : MonoBehaviour
 
             isClickCube = true;
             dragGameObject = hitInfo.collider.gameObject.transform;
-            Debug.Log(hitInfo.collider.gameObject.name);
+            //Debug.Log(hitInfo.collider.gameObject.name);
             return true;
 
         }
