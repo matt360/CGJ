@@ -178,25 +178,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 90277165}
-  - component: {fileID: 90277164}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &90277164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 90277163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14b8367b02575804f904e440b7c09dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &90277165
 RectTransform:
   m_ObjectHideFlags: 0
@@ -438,7 +426,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 90277164}
+      - m_Target: {fileID: 0}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -1789,10 +1777,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2054485437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cac3581cb666a4da6980cb55ce7f79, type: 3}
+  m_Script: {fileID: 11500000, guid: 04d38eb933906aa40bdb4084dafabe70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 6cf2f0a1b02c2a844be5b6de1032a94f, type: 2}
 --- !u!114 &2054485439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,7 +1934,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 90277164}
+      - m_Target: {fileID: 0}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
