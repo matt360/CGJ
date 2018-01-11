@@ -16,7 +16,7 @@ public class Delete : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("stay");
+        //Debug.Log("stay");
         if (other.gameObject.tag == "Item")
         {
             if (Input.GetMouseButtonUp(0))
