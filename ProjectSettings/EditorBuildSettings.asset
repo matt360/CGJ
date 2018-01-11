@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Laboratory.unity
     guid: deae2c5084ecf474297ca629ea9a3aab
+  - enabled: 0
+    path: Assets/Scenes/Pause Button.unity
+    guid: ab08efbc92aab7b49af9e8a06d743291
