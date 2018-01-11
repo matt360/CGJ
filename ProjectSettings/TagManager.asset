@@ -17,14 +17,15 @@ TagManager:
   - Bottle
   - Erl_Flask
   - Filter
-  - Flask_small
   - Measuring_Cylinder
-  - Ring_stand
-  - Round_bottomed_flask
   - Scale
-  - separate_layers
   - Spatula
   - Squeeze_Bottle
+  - Flask_Small
+  - Undefined
+  - Separate_Layers
+  - Ring_Stand
+  - Round_Bottomed_Flask
   layers:
   - Default
   - TransparentFX

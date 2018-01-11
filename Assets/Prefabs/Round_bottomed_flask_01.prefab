@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 65384516253238282}
   m_Layer: 0
   m_Name: Round_bottomed_flask_01
-  m_TagString: Round_bottomed_flask
+  m_TagString: Round_Bottomed_Flask
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
