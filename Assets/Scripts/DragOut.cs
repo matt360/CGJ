@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragOut : MonoBehaviour
 {
 
-    public GameObject Beaker,CuSO4;
+    public GameObject Beaker,CuSO4,Spetular;
     private Vector3 offset;
     private bool isClick = false;
     private Vector3 targetScreenPoint;
@@ -127,6 +127,12 @@ public class DragOut : MonoBehaviour
                         break;
                     case "CuSO4":
                         dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Spetular":
+                        dragOutGameObject = Instantiate(Spetular);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
