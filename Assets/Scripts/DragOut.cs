@@ -7,18 +7,20 @@ public class DragOut : MonoBehaviour
 
     public GameObject prefabs;
     private Vector3 offset;
-    private bool isClick;
+    private bool isClick = false;
     private Vector3 targetScreenPoint;
     private GameObject dragOutGameObject;
     // Use this for initialization
-    void Start()
+    private void Start()
     {
 
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+#if UNITY_EDITOR
+        //for unity editor
         if (Input.GetMouseButtonDown(0))
         {
             if (CheckGameObjectMouse())
@@ -41,6 +43,35 @@ public class DragOut : MonoBehaviour
             dragOutGameObject = null;
             isClick = false;
         }
+#else
+        //for android devices
+        if (Input.touchCount > 0)
+        {
+            switch (Input.GetTouch(0).phase)
+            {
+                case TouchPhase.Began:
+                    if (CheckGameObjectTouch())
+                    {
+                        offset = dragOutGameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, targetScreenPoint.z));
+                    }
+                    break;
+                case TouchPhase.Canceled: // If the interaction ends for any reason, we have to call the listeners
+                case TouchPhase.Ended:
+                    dragOutGameObject = null;
+                    isClick = false;
+                    break;
+            }
+
+            if (isClick)
+            {
+                Vector3 curScreenPoint = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, targetScreenPoint.z);
+
+                Vector3 curWorldPoint = Camera.main.ScreenToWorldPoint(curScreenPoint);
+                dragOutGameObject.transform.position = curWorldPoint + offset;
+            }
+        }
+
+#endif
     }
 
     private bool CheckGameObjectTouch()
@@ -53,13 +84,13 @@ public class DragOut : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.tag == "ItemIcon")
                 {
-                    isClick = true;
                     switch (hitInfo.collider.gameObject.name)
                     {
-                        case "Items":
+                        case "SphereBeaker":
                             dragOutGameObject = Instantiate(prefabs);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
                             break;
                         case "":
                             break;
@@ -82,13 +113,13 @@ public class DragOut : MonoBehaviour
         {
             if (hitInfo.collider.gameObject.tag == "ItemIcon")
             {
-                isClick = true;
                 switch (hitInfo.collider.gameObject.name)
                 {
-                    case "Items":
+                    case "SphereBeaker":
                         dragOutGameObject = Instantiate(prefabs);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
                         break;
                     case "":
                         break;

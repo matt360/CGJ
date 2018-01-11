@@ -59,6 +59,7 @@ public class Drag : MonoBehaviour
                     break;
                 case TouchPhase.Canceled: // If the interaction ends for any reason, we have to call the listeners
                 case TouchPhase.Ended:
+                    dragGameObject = null;
                     isClickCube = false;
                     break;
             }
