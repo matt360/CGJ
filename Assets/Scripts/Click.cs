@@ -93,13 +93,13 @@ public class Click : MonoBehaviour
                     endMarker = new Vector3(0, -6, 0);
                     buttonmenu.SetActive(false);
                     isClickCube = true;
-                    switch (this.gameObject.name)
+                    switch (hitInfo.collider.gameObject.name)
                     {
-                        case "Equipment":
+                        case "EquipmentBtn":
                             equip.gameObject.SetActive(true);
                             eleme.gameObject.SetActive(false);
                             break;
-                        case "Element":
+                        case "ElementBtn":
                             equip.gameObject.SetActive(false);
                             eleme.gameObject.SetActive(true);
                             break;
@@ -133,15 +133,13 @@ public class Click : MonoBehaviour
                 endMarker = new Vector3(0, -6, 0);
                 buttonmenu.SetActive(false);
                 isClickCube = true;
-                switch (this.name)
+                switch (hitInfo.collider.gameObject.name)
                 {
                     case "EquipmentBtn":
-                        Debug.Log(1);
                         equip.gameObject.SetActive(true);
                         eleme.gameObject.SetActive(false);
                         break;
                     case "ElementBtn":
-                        Debug.Log(2);
                         equip.gameObject.SetActive(false);
                         eleme.gameObject.SetActive(true);
                         break;

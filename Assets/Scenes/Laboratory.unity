@@ -117,7 +117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 292337650}
   - component: {fileID: 292337651}
-  - component: {fileID: 292337652}
   m_Layer: 0
   m_Name: EquipmentBtn
   m_TagString: UI
@@ -151,23 +150,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.4705935, y: 0.5841737, z: 1}
   m_Center: {x: 0.017456532, y: -0.22731328, z: 0}
---- !u!114 &292337652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 292337649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52d067fb777c9fa4fbed5ec1c5bc3691, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonmenu: {fileID: 1332646479}
-  equip: {fileID: 2016293456}
-  eleme: {fileID: 1293411798}
-  canDrag2:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &577572525
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,11 +402,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1005247150}
   - component: {fileID: 1005247149}
+  - component: {fileID: 1005247154}
   - component: {fileID: 1005247148}
   - component: {fileID: 1005247147}
   - component: {fileID: 1005247146}
   - component: {fileID: 1005247151}
   - component: {fileID: 1005247152}
+  - component: {fileID: 1005247153}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -525,6 +509,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs: {fileID: 1412195753093536, guid: e2c03bdbfd04c1b498749e750b86fb26, type: 2}
+--- !u!114 &1005247153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005247145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d067fb777c9fa4fbed5ec1c5bc3691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonmenu: {fileID: 1332646479}
+  equip: {fileID: 2016293456}
+  eleme: {fileID: 1293411798}
+  canDrag2:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1005247154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005247145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d311469700cbf9948810c2e6cdf8b7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1279084027
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +546,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1279084028}
   - component: {fileID: 1279084029}
-  - component: {fileID: 1279084030}
   m_Layer: 0
   m_Name: ElementBtn
   m_TagString: UI
@@ -568,23 +579,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.4705935, y: 0.58417463, z: 1}
   m_Center: {x: 0, y: -0.20104194, z: 0}
---- !u!114 &1279084030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1279084027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52d067fb777c9fa4fbed5ec1c5bc3691, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonmenu: {fileID: 1332646479}
-  equip: {fileID: 2016293456}
-  eleme: {fileID: 1293411798}
-  canDrag2:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &1291798822
 GameObject:
   m_ObjectHideFlags: 0

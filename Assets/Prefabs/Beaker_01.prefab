@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4933087696441222}
   - component: {fileID: 95961510885446874}
-  - component: {fileID: 114327492154467912}
   - component: {fileID: 65100124979046618}
   m_Layer: 0
   m_Name: Beaker_01
@@ -141,14 +140,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114327492154467912
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1412195753093536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d311469700cbf9948810c2e6cdf8b7c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

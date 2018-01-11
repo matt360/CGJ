@@ -87,7 +87,7 @@ public class Drag : MonoBehaviour
                 if (hitInfo.collider.gameObject.tag == "Item")
                 {
                     isClickCube = true;
-                    dragGameObject = this.transform;
+                    dragGameObject = hitInfo.collider.GetComponent<Transform>();
                     targetScreenPoint = Camera.main.WorldToScreenPoint(dragGameObject.position);
                     return true;
                 }
