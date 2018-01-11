@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 65840792668773342}
   m_Layer: 0
   m_Name: Erlenmeyer_flasks
-  m_TagString: Item
+  m_TagString: Erl_Flask
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -201,11 +201,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4933087696441222, guid: e2c03bdbfd04c1b498749e750b86fb26, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.42
+      value: -6.71
       objectReference: {fileID: 0}
     - target: {fileID: 4933087696441222, guid: e2c03bdbfd04c1b498749e750b86fb26, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -1.63
       objectReference: {fileID: 0}
     - target: {fileID: 4933087696441222, guid: e2c03bdbfd04c1b498749e750b86fb26, type: 2}
       propertyPath: m_LocalPosition.z
@@ -921,6 +921,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
