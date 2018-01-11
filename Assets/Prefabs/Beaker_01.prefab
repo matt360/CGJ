@@ -37,9 +37,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4933087696441222}
   - component: {fileID: 95961510885446874}
+  - component: {fileID: 114327492154467912}
+  - component: {fileID: 65100124979046618}
   m_Layer: 0
   m_Name: Beaker_01
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1412195753093536}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -14.434589, y: -0.0766395, z: 0}
+  m_LocalPosition: {x: -3.18, y: -0.0766395, z: -0}
   m_LocalScale: {x: 0.50000024, y: 0.5, z: 0.50000024}
   m_Children:
   - {fileID: 4947144314393768}
@@ -110,6 +112,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1149874212813630}
   m_Mesh: {fileID: 4300000, guid: 27a67525597d9cc4e9a2b6d6f543f0bc, type: 3}
+--- !u!65 &65100124979046618
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1412195753093536}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 4.8431716, z: 4.307456}
+  m_Center: {x: 8.716253e-16, y: -0.0116455555, z: 0.186335}
 --- !u!95 &95961510885446874
 Animator:
   serializedVersion: 3
@@ -127,3 +141,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114327492154467912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1412195753093536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d311469700cbf9948810c2e6cdf8b7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

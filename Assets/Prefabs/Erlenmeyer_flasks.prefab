@@ -37,9 +37,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4878952225746384}
   - component: {fileID: 95412157059452962}
+  - component: {fileID: 114472805283927086}
+  - component: {fileID: 65840792668773342}
   m_Layer: 0
   m_Name: Erlenmeyer_flasks
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +112,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1635477970413148}
   m_Mesh: {fileID: 4300000, guid: d3f2040313500974fb0af237bc95ec5a, type: 3}
+--- !u!65 &65840792668773342
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948227148166972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.8497195, y: 7.7768707, z: 1}
+  m_Center: {x: 0.23776937, y: 0.3698635, z: 0}
 --- !u!95 &95412157059452962
 Animator:
   serializedVersion: 3
@@ -127,3 +141,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114472805283927086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948227148166972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d311469700cbf9948810c2e6cdf8b7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -52,9 +52,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4580885338285808}
   - component: {fileID: 95411834072002074}
+  - component: {fileID: 114507126787329550}
+  - component: {fileID: 65694840189228990}
   m_Layer: 0
   m_Name: Scale_001
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,6 +351,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1325847361532238}
   m_Mesh: {fileID: 4300000, guid: 3cfcb3e368bf13c44adff388e4b43d60, type: 3}
+--- !u!65 &65694840189228990
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319381355771852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.341146, z: 9.192268}
+  m_Center: {x: -0, y: 0, z: 0}
 --- !u!95 &95411834072002074
 Animator:
   serializedVersion: 3
@@ -366,3 +380,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114507126787329550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319381355771852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d311469700cbf9948810c2e6cdf8b7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

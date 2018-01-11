@@ -69,9 +69,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4146948157190742}
   - component: {fileID: 95380247146473228}
+  - component: {fileID: 114006024381858920}
+  - component: {fileID: 65919311328267806}
   m_Layer: 0
   m_Name: Ring_stands_rings_attached
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1551402489985358}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 9.421873, y: -0.94, z: 0}
+  m_LocalPosition: {x: 13.4, y: -0.94, z: -0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4247267705029134}
@@ -209,6 +211,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233769668022658}
   m_Mesh: {fileID: 4300000, guid: 28d44f795fde38f4c8d530e68ce6bee8, type: 3}
+--- !u!65 &65919311328267806
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551402489985358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 22.159397, z: 8.849453}
+  m_Center: {x: -1.4859465e-15, y: 6.256815, z: -2.1045637}
 --- !u!95 &95380247146473228
 Animator:
   serializedVersion: 3
@@ -226,3 +240,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114006024381858920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551402489985358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d311469700cbf9948810c2e6cdf8b7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
