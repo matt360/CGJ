@@ -17,7 +17,14 @@ public class Delete : MonoBehaviour {
     private void OnTriggerStay(Collider other)
     {
         //Debug.Log("stay");
-        if (other.gameObject.tag == "Item" || other.gameObject.tag == "Element")
+        if (hitInfo.collider.gameObject.tag == "Beaker"
+                    || hitInfo.collider.gameObject.tag == "Bottle"
+                    || hitInfo.collider.gameObject.tag == "Erl_Flask"
+                    || hitInfo.collider.gameObject.tag == "Measuring_Cylinder"
+                    || hitInfo.collider.gameObject.tag == "Squeeze_Bottle"
+                    || hitInfo.collider.gameObject.tag == "Flask_Small"
+                    || hitInfo.collider.gameObject.tag == "Round_Bottomed_Flask"
+                    || hitInfo.collider.gameObject.tag == "Spatula")
         {
             if (Input.GetMouseButtonUp(0))
             {

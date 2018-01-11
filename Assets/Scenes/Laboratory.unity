@@ -3167,7 +3167,7 @@ SpriteRenderer:
   m_Size: {x: 6.96, y: 5.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &968927196
 GameObject:
@@ -4744,20 +4744,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -5093,7 +5079,7 @@ SpriteRenderer:
   m_Size: {x: 6.96, y: 5.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &1363652805
 GameObject:
@@ -5490,7 +5476,7 @@ SpriteRenderer:
   m_SortingLayerID: 1856859963
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ea9ac8c939c7d9848a07af9a656689fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3473afe9b4d372d478b6a8cc69586572, type: 3}
   m_Color: {r: 0.41176468, g: 0.32093424, b: 0.32093424, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5498,7 +5484,7 @@ SpriteRenderer:
   m_Size: {x: 6.96, y: 5.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &1609652700
 GameObject:
@@ -5569,7 +5555,7 @@ SpriteRenderer:
   m_Size: {x: 6.96, y: 5.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &1611657106
 GameObject:
