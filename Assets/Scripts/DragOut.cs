@@ -82,7 +82,7 @@ public class DragOut : MonoBehaviour
             RaycastHit hitInfo;
             if (Physics.Raycast(ray, out hitInfo))
             {
-                if (hitInfo.collider.gameObject.tag == "ItemIcon")
+                if (hitInfo.collider.gameObject.tag == "ItemIcon" || hitInfo.collider.gameObject.tag == "ElementIcon")
                 {
                     switch (hitInfo.collider.gameObject.name)
                     {
@@ -115,7 +115,7 @@ public class DragOut : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo))
         {
-            if (hitInfo.collider.gameObject.tag == "ItemIcon")
+            if (hitInfo.collider.gameObject.tag == "ItemIcon" || hitInfo.collider.gameObject.tag == "ElementIcon")
             {
                 switch (hitInfo.collider.gameObject.name)
                 {
