@@ -5,7 +5,6 @@ using UnityEngine;
 public class WeightItems : MonoBehaviour {
 
 	public Transform weightingPlace;
-    public Transform itemWeightingPlace;
 
     void OnTriggerStay(Collider collision)
     { 
