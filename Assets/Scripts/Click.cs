@@ -147,12 +147,13 @@ public class Click : MonoBehaviour
                 //Debug.Log(hitInfo.collider.gameObject.name);
                 return true;
             }
-            else if (hitInfo.collider.gameObject.tag == "ItemIcon" || hitInfo.collider.gameObject.tag == "Background" || hitInfo.collider.gameObject.tag == "Bottle" || hitInfo.collider.gameObject.tag == "ElementIcon" || hitInfo.collider.gameObject.tag == "Element")
+            if (hitInfo.collider.gameObject.tag == "ItemIcon" || hitInfo.collider.gameObject.tag == "Background" || hitInfo.collider.gameObject.tag == "Bottle" || hitInfo.collider.gameObject.tag == "ElementIcon" || hitInfo.collider.gameObject.tag == "Element")
             {
                 //Debug.Log(2);
                 isShow = false;
                 endMarker = new Vector3(0, 0, 0);
-                buttonmenu.SetActive(true);
+                if(buttonmenu)
+                    buttonmenu.SetActive(true);
                 isClickCube = true;
                 
                 return true;
