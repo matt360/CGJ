@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragOut : MonoBehaviour
 {
 
-    public GameObject Beaker,CuSO4,Spetular,ConeBeaker,SphereBeaker,Funnel,Seperator,Sqeezy;
+    public GameObject Beaker,CuSO4,Spetular,Scale,ConeBeaker,Measuring,SphereBeaker,Funnel,Seperator,Sqeezy;
     private Vector3 offset;
     private bool isClick = false;
     private Vector3 targetScreenPoint;
@@ -92,8 +92,80 @@ public class DragOut : MonoBehaviour
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
                             break;
-                        case "CuSO4":
+                        case "H2O":
                             dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "NaBH":
+                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Carb":
+                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "CH3OH":
+                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "CH2Cl2":
+                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Spatula":
+                            dragOutGameObject = Instantiate(Spetular);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "ConeBeaker":
+                            dragOutGameObject = Instantiate(ConeBeaker);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "SphereBeaker":
+                            dragOutGameObject = Instantiate(SphereBeaker);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Seperator":
+                            dragOutGameObject = Instantiate(Seperator);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Funnel":
+                            dragOutGameObject = Instantiate(Funnel);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Sqeezy":
+                            dragOutGameObject = Instantiate(Sqeezy);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Measuring":
+                            dragOutGameObject = Instantiate(Measuring);
+                            dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                            targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                            isClick = true;
+                            break;
+                        case "Scale":
+                            dragOutGameObject = Instantiate(Scale);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
@@ -125,7 +197,31 @@ public class DragOut : MonoBehaviour
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
                         break;
-                    case "CuSO4":
+                    case "H2O":
+                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "NaBH":
+                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Carb":
+                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "CH3OH":
+                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "CH2Cl2":
                         dragOutGameObject = Instantiate(CuSO4);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
@@ -133,6 +229,48 @@ public class DragOut : MonoBehaviour
                         break;
                     case "Spatula":
                         dragOutGameObject = Instantiate(Spetular);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "ConeBeaker":
+                        dragOutGameObject = Instantiate(ConeBeaker);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "SphereBeaker":
+                        dragOutGameObject = Instantiate(SphereBeaker);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Seperator":
+                        dragOutGameObject = Instantiate(Seperator);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Funnel":
+                        dragOutGameObject = Instantiate(Funnel);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Sqeezy":
+                        dragOutGameObject = Instantiate(Sqeezy);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Measuring":
+                        dragOutGameObject = Instantiate(Measuring);
+                        dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
+                        targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
+                        isClick = true;
+                        break;
+                    case "Scale":
+                        dragOutGameObject = Instantiate(Scale);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
