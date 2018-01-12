@@ -95,7 +95,9 @@ public class Drag : MonoBehaviour
                     || hitInfo.collider.gameObject.tag == "Round_Bottomed_Flask"
                     || hitInfo.collider.gameObject.tag == "Spatula"
                     || hitInfo.collider.gameObject.tag == "Filter"
-                    || hitInfo.collider.gameObject.tag == "Scale")
+                    || hitInfo.collider.gameObject.tag == "Scale"
+                    || hitInfo.collider.gameObject.tag == "seperate_Layers"
+                    )
                 {
                     isClickCube = true;
                     dragGameObject = hitInfo.collider.GetComponent<Transform>();
@@ -122,7 +124,9 @@ public class Drag : MonoBehaviour
                 || hitInfo.collider.gameObject.tag == "Round_Bottomed_Flask"
                 || hitInfo.collider.gameObject.tag == "Spatula"
                 || hitInfo.collider.gameObject.tag == "Filter"
-                || hitInfo.collider.gameObject.tag == "Scale")
+                || hitInfo.collider.gameObject.tag == "Scale"
+                || hitInfo.collider.gameObject.tag == "seperate_Layers"
+                )
             {
                 isClickCube = true;
                 dragGameObject = hitInfo.collider.GetComponent<Transform>();
