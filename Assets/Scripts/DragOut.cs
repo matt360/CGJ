@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragOut : MonoBehaviour
 {
 
-    public GameObject Beaker,CuSO4,Spetular,Scale,ConeBeaker,Measuring,SphereBeaker,Funnel,Seperator,Sqeezy;
+    public GameObject Beaker,H20,CH3OH,CH2Cl2,Carb,NaBH4,Spetular,Scale,ConeBeaker,Measuring,SphereBeaker,Funnel,Seperator,Sqeezy;
     private Vector3 offset;
     private bool isClick = false;
     private Vector3 targetScreenPoint;
@@ -93,31 +93,31 @@ public class DragOut : MonoBehaviour
                             isClick = true;
                             break;
                         case "H2O":
-                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject = Instantiate(H20);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
                             break;
                         case "NaBH":
-                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject = Instantiate(NaBH4);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
                             break;
                         case "Carb":
-                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject = Instantiate(Carb);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
                             break;
                         case "CH3OH":
-                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject = Instantiate(CH3OH);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
                             break;
                         case "CH2Cl2":
-                            dragOutGameObject = Instantiate(CuSO4);
+                            dragOutGameObject = Instantiate(CH2Cl2);
                             dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                             targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                             isClick = true;
@@ -198,31 +198,31 @@ public class DragOut : MonoBehaviour
                         isClick = true;
                         break;
                     case "H2O":
-                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject = Instantiate(H20);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
                         break;
                     case "NaBH":
-                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject = Instantiate(NaBH4);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
                         break;
                     case "Carb":
-                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject = Instantiate(Carb);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
                         break;
                     case "CH3OH":
-                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject = Instantiate(CH3OH);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;
                         break;
                     case "CH2Cl2":
-                        dragOutGameObject = Instantiate(CuSO4);
+                        dragOutGameObject = Instantiate(CH2Cl2);
                         dragOutGameObject.transform.position = hitInfo.collider.gameObject.transform.position;
                         targetScreenPoint = Camera.main.WorldToScreenPoint(dragOutGameObject.transform.position);
                         isClick = true;

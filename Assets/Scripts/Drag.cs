@@ -87,7 +87,7 @@ public class Drag : MonoBehaviour
             if (Physics.Raycast(ray, out hitInfo))
             {
                 if (hitInfo.collider.gameObject.tag == "Beaker"
-                    || hitInfo.collider.gameObject.tag == "Bottle"
+                    || hitInfo.collider.gameObject.tag == "Element"
                     || hitInfo.collider.gameObject.tag == "Erl_Flask"
                     || hitInfo.collider.gameObject.tag == "Measuring_Cylinder"
                     || hitInfo.collider.gameObject.tag == "Squeeze_Bottle"
@@ -116,7 +116,7 @@ public class Drag : MonoBehaviour
         if (Physics.Raycast(ray, out hitInfo))
         {
             if (hitInfo.collider.gameObject.tag == "Beaker"
-                || hitInfo.collider.gameObject.tag == "Bottle"
+                || hitInfo.collider.gameObject.tag == "Element"
                 || hitInfo.collider.gameObject.tag == "Erl_Flask"
                 || hitInfo.collider.gameObject.tag == "Measuring_Cylinder"
                 || hitInfo.collider.gameObject.tag == "Squeeze_Bottle"

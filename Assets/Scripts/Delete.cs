@@ -18,7 +18,7 @@ public class Delete : MonoBehaviour {
     {
         //Debug.Log("stay");
         if (other.gameObject.tag == "Beaker"
-                    || other.gameObject.tag == "Bottle"
+                    || other.gameObject.tag == "Element"
                     || other.gameObject.tag == "Erl_Flask"
                     || other.gameObject.tag == "Measuring_Cylinder"
                     || other.gameObject.tag == "Squeeze_Bottle"
