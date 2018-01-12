@@ -96,7 +96,7 @@ public class Drag : MonoBehaviour
                     || hitInfo.collider.gameObject.tag == "Spatula"
                     || hitInfo.collider.gameObject.tag == "Filter"
                     || hitInfo.collider.gameObject.tag == "Scale"
-                    || hitInfo.collider.gameObject.tag == "seperate_Layers"
+                    || hitInfo.collider.gameObject.tag == "Separate_Layers"
                     )
                 {
                     isClickCube = true;
@@ -125,7 +125,7 @@ public class Drag : MonoBehaviour
                 || hitInfo.collider.gameObject.tag == "Spatula"
                 || hitInfo.collider.gameObject.tag == "Filter"
                 || hitInfo.collider.gameObject.tag == "Scale"
-                || hitInfo.collider.gameObject.tag == "seperate_Layers"
+                || hitInfo.collider.gameObject.tag == "Separate_Layers"
                 )
             {
                 isClickCube = true;
